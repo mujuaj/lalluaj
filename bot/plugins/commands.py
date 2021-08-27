@@ -51,7 +51,7 @@ Join on our channel to get movies ✅
         if (file_id or file_type) == None:
             return
         
-        caption =  ("<code>" + file_name + "</code>")if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
+        caption =  ("<code>" + file_name + "</code> \n<b>Join [MOVIE HUB HD⬛◼◾▪ ](https://t.me/worldmoviesaj) </b><b> [𝘼𝙇𝙇 𝙈𝙊𝙑𝙄𝙀𝙎 𝘼𝙉𝘿 𝙎𝙀𝙍𝙄𝙀𝙎 𝙃𝘿 ](https://t.me/AJmovieLINKS) <b>© Powered by [𝚈𝙾𝚄 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝚆𝙴 𝙿𝚁𝙾𝚅𝙸𝙳𝙴](https://t.me/AJmovieLINKS) </b>")if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
         
         
         
@@ -60,7 +60,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"  file_name \n Join [MOVIE HUB HD⬛◼◾▪ ](https://t.me/worldmoviesaj) [𝘼𝙇𝙇 𝙈𝙊𝙑𝙄𝙀𝙎 𝘼𝙉𝘿 𝙎𝙀𝙍𝙄𝙀𝙎 𝙃𝘿 ](https://t.me/AJmovieLINKS)© Powered by [𝚈𝙾𝚄 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝚆𝙴 𝙿𝚁𝙾𝚅𝙸𝙳𝙴](https://t.me/AJmovieLINKS) ",
+                caption = caption,
                 parse_mode="html",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
@@ -81,7 +81,7 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = f" <code> file_name </code> \n Join [MOVIE HUB HD⬛◼◾▪ ](https://t.me/worldmoviesaj) [𝘼𝙇𝙇 𝙈𝙊𝙑𝙄𝙀𝙎 𝘼𝙉𝘿 𝙎𝙀𝙍𝙄𝙀𝙎 𝙃𝘿 ](https://t.me/AJmovieLINKS)  © Powered by [𝚈𝙾𝚄 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝚆𝙴 𝙿𝚁𝙾𝚅𝙸𝙳𝙴](https://t.me/AJmovieLINKS) ",
+                caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
