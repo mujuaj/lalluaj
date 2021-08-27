@@ -52,7 +52,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f" <code>{file_name}<code> \n <b> @worldmoviesaj <b> /n<b>© Powered by<b> @AJmovieLINKS ",
+                caption = f" <code>{file_name}<code> \n <b> @worldmoviesaj <b> \n<b>© Powered by<b> @AJmovieLINKS ",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -72,7 +72,8 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption =  f" <code>{file_name}<code> \n @worldmoviesaj",
+                caption =f" <code>{file_name}<code> \n <b> @worldmoviesaj <b> \n<b>© Powered by<b> @AJmovieLINKS ",
+                parse_mode="html",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -91,7 +92,8 @@ Join on our channel to get movies ✅
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption =  f"file_name \n @worldmoviesaj",
+                caption = f" <code>{file_name}<code> \n <b> @worldmoviesaj <b> \n<b>© Powered by<b> @AJmovieLINKS ",
+                parse_mode="html",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
