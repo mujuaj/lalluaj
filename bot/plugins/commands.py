@@ -52,7 +52,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"file_name \n @worldmoviesaj",
+                caption = f" <code>file_caption<code> \n @worldmoviesaj",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -60,7 +60,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/JNS_BOTS"
+                                    'More Movies', url="https://t.me/worldmoviesaj"
                                 )
                         ]
                     ]
@@ -72,7 +72,7 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption =  f"file_name \n @worldmoviesaj",
+                caption =  f" <code>file_caption<code> \n @worldmoviesaj",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
