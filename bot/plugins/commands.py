@@ -52,7 +52,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f" <code>{file_name}<code> \n <b> @worldmoviesaj <b> \n<b>© Powered by<b> @AJmovieLINKS ",
+                caption = caption,
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -60,7 +60,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'More Movies', url="https://t.me/worldmoviesaj"
+                                    'Developers', url="https://t.me/JNS_BOTS"
                                 )
                         ]
                     ]
@@ -72,7 +72,7 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = caption,
+                caption =  f" <code>{file_name}<code> \n <b> @worldmoviesaj <b> \n<b>© Powered by<b> @AJmovieLINKS ",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -86,7 +86,7 @@ Join on our channel to get movies ✅
                 )
             )
             
-    elif file_type == "audio":
+        elif file_type == "audio":
         
             await bot.send_audio(
                 chat_id=update.chat.id,
@@ -94,7 +94,7 @@ Join on our channel to get movies ✅
                 caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
-                  [
+                    [
                         [
                             InlineKeyboardButton
                                 (
@@ -170,3 +170,15 @@ async def about(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
