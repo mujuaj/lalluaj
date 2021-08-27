@@ -72,8 +72,7 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption =f" <code>{file_name}<code> \n  @worldmoviesaj",
-                parse_mode="html",
+                caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
