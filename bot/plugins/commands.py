@@ -86,13 +86,12 @@ Join on our channel to get movies ✅
                 )
             )
             
-        elif file_type == "audio":
+    elif file_type == "audio":
         
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = f" <code>{file_name}<code> \n  @worldmoviesaj ",
-                parse_mode="html",
+                caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
