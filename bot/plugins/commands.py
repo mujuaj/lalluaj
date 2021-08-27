@@ -62,7 +62,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = caption,
+                caption = f"file_name \n @worldmoviesaj",
                 parse_mode="html",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
@@ -83,7 +83,7 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = caption,
+                caption = f"file_name /n @worldmoviesaj",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
