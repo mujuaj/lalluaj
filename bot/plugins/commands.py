@@ -52,7 +52,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = caption,
+                caption = f"file_name \n @worldmoviesaj
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -72,14 +72,14 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = caption,
+                caption =  f"file_name \n @worldmoviesaj
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/jns_bots"
+                                    'More Movies', url="https://t.me/worldmoviesaj"
                                 )
                         ]
                     ]
@@ -91,14 +91,14 @@ Join on our channel to get movies ✅
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = caption,
+                caption =  f"file_name \n @worldmoviesaj
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/jns_bots"
+                                    'More Movies', url="https://t.me/worldmoviesaj"
                                 )
                         ]
                     ]
@@ -111,10 +111,10 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/jns_bots'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/https://t.me/githubsoursecode')],                               
+        InlineKeyboardButton('Developers', url='https://t.me/worldmoviesaj'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/AJmovieLINKS')],                               
      [
-        InlineKeyboardButton('Support 🛠', url='https://t.me/jns_fc_bots')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/AJmovieLINKS')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
