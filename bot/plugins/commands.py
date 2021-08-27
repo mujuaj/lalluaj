@@ -25,15 +25,9 @@ async def start(bot, update):
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
                 text=""" <b> ⚠️ YOU ARE NOT SUBSCRIBED OUR CHANNEL⚠️
-
 Join on our channel to get movies ✅
-
-
 ⚠️താങ്കൾ ഞങ്ങളുടെ ചാനൽ സബ്സ്ക്രൈബ് ചെയ്തിട്ട് ഇല്ല ! ⚠️
-
-
 ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്യതാൽ താങ്കൾക്ക് movies കിട്ടുന്നത് ആണ് ✅
-
 ⬇️Channel link⬇️ </b>""",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"https://t.me/{update_channel}")]
@@ -53,17 +47,12 @@ Join on our channel to get movies ✅
         
         caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
         
-        
-        
-        
-        
         if file_type == "document":
         
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"file_name \n @worldmoviesaj",
-                parse_mode="html",
+                caption = caption,
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -71,7 +60,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'MORE MOVIES', url="https://t.me/worldmoviesaj"
+                                    'Developers', url="https://t.me/JNS_BOTS"
                                 )
                         ]
                     ]
@@ -83,14 +72,14 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = f"file_name /n @worldmoviesaj",
+                caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'MORE MOVIES', url="https://t.me/worldmoviesaj"
+                                    'Developers', url="https://t.me/jns_bots"
                                 )
                         ]
                     ]
@@ -109,7 +98,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'MORE MOVIES', url="https://t.me/worldmoviesaj"
+                                    'Developers', url="https://t.me/jns_bots"
                                 )
                         ]
                     ]
@@ -122,10 +111,10 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('MORE MOVIES', url='https://t.me/worldmoviesaj'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/AJmovieLINKS')],                               
+        InlineKeyboardButton('Developers', url='https://t.me/jns_bots'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/https://t.me/githubsoursecode')],                               
      [
-        InlineKeyboardButton('Support 🛠', url='https://t.me/AJmovieLINKS')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/jns_fc_bots')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
@@ -180,5 +169,3 @@ async def about(bot, update):
         disable_web_page_preview=True,
         parse_mode="html",
         reply_to_message_id=update.message_id
-    )
-
