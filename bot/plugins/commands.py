@@ -51,7 +51,16 @@ Join on our channel to get movies ✅
         if (file_id or file_type) == None:
             return
         
-        caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
+        caption = ("<b>Join [MOVIE HUB HD⬛◼◾▪ ](https://t.me/worldmoviesaj) </b>
+
+<code>{file_name}</code>
+
+<b> [𝘼𝙇𝙇 𝙈𝙊𝙑𝙄𝙀𝙎 𝘼𝙉𝘿 𝙎𝙀𝙍𝙄𝙀𝙎 𝙃𝘿 ](https://t.me/AJmovieLINKS) 
+
+<b>© Powered by [𝚈𝙾𝚄 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝚆𝙴 𝙿𝚁𝙾𝚅𝙸𝙳𝙴](https://t.me/AJmovieLINKS) </b>
+
+
+███████ ★.•°°•.★⁩⁩ ███████")
         
         if file_type == "document":
         
@@ -66,7 +75,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/JNS_BOTS"
+                                    'MORE MOVIES', url="https://t.me/worldmoviesaj"
                                 )
                         ]
                     ]
@@ -85,7 +94,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/jns_bots"
+                                    'MORE MOVIES', url="https://t.me/worldmoviesaj"
                                 )
                         ]
                     ]
@@ -104,7 +113,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/jns_bots"
+                                    'MORE MOVIES', url="https://t.me/worldmoviesaj"
                                 )
                         ]
                     ]
@@ -117,10 +126,10 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/jns_bots'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/https://t.me/githubsoursecode')],                               
+        InlineKeyboardButton('MORE MOVIES', url='https://t.me/AJmovieLINKS'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/AJmovieLINKS')],                               
      [
-        InlineKeyboardButton('Support 🛠', url='https://t.me/jns_fc_bots')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/worldmoviesaj')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
