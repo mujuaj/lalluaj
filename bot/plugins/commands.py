@@ -51,25 +51,9 @@ Join on our channel to get movies ✅
         if (file_id or file_type) == None:
             return
         
-        caption = <b>Join [MOVIE HUB HD⬛◼◾▪ ](https://t.me/worldmoviesaj) </b>
-
-<code>{file_name}</code>
-
-<b> [𝘼𝙇𝙇 𝙈𝙊𝙑𝙄𝙀𝙎 𝘼𝙉𝘿 𝙎𝙀𝙍𝙄𝙀𝙎 𝙃𝘿 ](https://t.me/AJmovieLINKS) 
-
-<b>© Powered by [𝚈𝙾𝚄 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝚆𝙴 𝙿𝚁𝙾𝚅𝙸𝙳𝙴](https://t.me/AJmovieLINKS) </b>
-
-
-███████ ★.•°°•.★⁩⁩ ███████ if file_caption != ("" or None) else ("<b>Join [MOVIE HUB HD⬛◼◾▪ ](https://t.me/worldmoviesaj) </b>
-
-<code>{file_name}</code>
-
-<b> [𝘼𝙇𝙇 𝙈𝙊𝙑𝙄𝙀𝙎 𝘼𝙉𝘿 𝙎𝙀𝙍𝙄𝙀𝙎 𝙃𝘿 ](https://t.me/AJmovieLINKS) 
-
-<b>© Powered by [𝚈𝙾𝚄 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝚆𝙴 𝙿𝚁𝙾𝚅𝙸𝙳𝙴](https://t.me/AJmovieLINKS) </b>
-
-
-███████ ★.•°°•.★⁩⁩ ███████")
+        caption =  ("<code>" + file_name + "</code>")
+         if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
+        
         
         
         if file_type == "document":
