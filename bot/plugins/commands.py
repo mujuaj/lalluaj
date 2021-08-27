@@ -94,7 +94,7 @@ Join on our channel to get movies ✅
                 caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
-                    [
+                  [
                         [
                             InlineKeyboardButton
                                 (
@@ -111,7 +111,7 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/worldmoviesaj'),
+        InlineKeyboardButton('More Movies', url='https://t.me/worldmoviesaj'),
         InlineKeyboardButton('Source Code 🧾', url ='https://t.me/AJmovieLINKS')],                               
      [
         InlineKeyboardButton('Support 🛠', url='https://t.me/AJmovieLINKS')
