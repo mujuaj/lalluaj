@@ -51,7 +51,8 @@ Join on our channel to get movies ✅
         if (file_id or file_type) == None:
             return
         
-        caption =  ("<code>" + file_name + "</code>" \n @worldmoviesajJoin [MOVIE HUB HD⬛◼◾▪")if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
+        caption =  ("<code>" + file_name + "</code>" != ("" or None) else ("<code>" + file_name + "</code>")
+        
         
         
         
