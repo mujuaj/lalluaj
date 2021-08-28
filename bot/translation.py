@@ -5,7 +5,7 @@
 class Translation(object):
     
     START_TEXT = """<b><u>Hey {} HOW ARE YOU!!</u></b>
-<i>Am Just A Advance AJ Auto Filter Bot....😉
+<i>Am Just An Advance AJ Auto Filter Bot....😉
 
 I am exclusively made for Movie Hub Hd.
 
