@@ -5,12 +5,12 @@
 class Translation(object):
     
     START_TEXT = """<b><u>Hey {} HOW ARE YOU!!</u></b>
-<i>Am Just A Advance Auto Filter Bot....😉
+<i>Am Just A Advance AJ Auto Filter Bot....😉
 
-Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝
+I am exclusively made for Movie Hub Hd.
 
 For More Details Click Help Button Below..
-<b>♕ 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ♛</b> <a href="https://t.me/worldmoviesaj"> AJ ᗷ〇Ƭ⟆</a>
+<b>♕ MY OWNER ♛</b> <a href="https://t.me/worldmoviesaj"> AJ</a>
 </i>"""    
     
     HELP_TEXT = """
