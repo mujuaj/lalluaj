@@ -10,7 +10,7 @@ class Translation(object):
 I am exclusively made for Movie Hub Hd.
 
 For More Details Click Help Button Below..
-<b>♕ MY OWNER ♛</b> <a href="https://t.me/worldmoviesaj"> AJ</a>
+<b>♕ MY OWNER ♛</b> <a href="https://t.me/avataradorn"> AJ</a>
 </i>"""    
     
     HELP_TEXT = """
