@@ -203,7 +203,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f'''\n🄼🄾🅅🄸🄴 🄷🅄🄱 🄷🄳⬛️◼️◾️▪️ \n\n 𝙁𝙊𝙍 :  {update.from_user.mention}<b>\n\n🎬𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬:-</b><code>{query}</code>\n🌩️𝐓𝐨𝐭𝐚𝐥 𝐑𝐞𝐬𝐮𝐥𝐭𝐬:{len_results} \n\n◻⬜@AJmovieLINKS⬛◼''',
+                text=f'''\n🄼🄾🅅🄸🄴 🄷🅄🄱 🄷🄳⬛️◼️◾️▪️ \n\n 𝙁𝙊𝙍 :  {update.from_user.mention}<b>\n\n🎬𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬:-</b><code>{query}</code>\n🌩️𝐓𝐨𝐭𝐚𝐥 𝐑𝐞𝐬𝐮𝐥𝐭𝐬:{len_results} \n\n𝐅𝐑𝐎𝐌:◻⬜@AJmovieLINKS⬛◼''',
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
