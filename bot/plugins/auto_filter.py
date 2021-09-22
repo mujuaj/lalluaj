@@ -126,13 +126,12 @@ async def auto_filter(bot, update):
             )
         
     else:
+        else:
         await bot.send_message(
         chat_id=update.chat.id,
         text=f"CHECK SPELLING FROM GOOGLE AND REQUEST AGAIN.IF YOU DIDN'T GET EVEN AFTER THAT,THE FILE IS NOT AVAILABLE 😌",
         parse_mode="html",
-    
-
-    if len(results) == 0: # double check
+        reply_to_message_id=update.message_id)
         return
     
     else:
