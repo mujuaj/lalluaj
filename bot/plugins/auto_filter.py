@@ -126,13 +126,10 @@ async def auto_filter(bot, update):
             )
         
     else:
+        else:
         await bot.send_message(
         chat_id=update.chat.id,
-        text=f"SORRY,I COULDNT FIND ANY RESULTS FOR YOUR QUERY.𝗣𝗟𝗘𝗔𝗦𝗘 𝗖𝗛𝗘𝗖𝗞 𝗧𝗛𝗘 𝗦𝗣𝗘𝗟𝗟𝗜𝗡𝗚 𝗙𝗥𝗢𝗠 Google\n👇𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗙𝗼𝗿𝗺𝗮𝘁 \n
-𝗘𝗴 : 𝗧𝗶𝘁𝗮𝗻𝗶𝗰  ✅\n
- 𝗧𝗶𝘁𝗮𝗻𝗶𝗰 𝟭𝟵𝟵𝟳 ✅\n
-𝗧𝗶𝘁𝗮𝗻𝗶𝗰 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 𝗠𝗼𝘃𝗶𝗲 ❌\n
-🅔🅥🅔🅝 🅣🅗🅔🅝 🅨🅞🅤 🅓🅘🅓🅝'🅣 🅖🅔🅣 🅡🅔🅢🅤🅛🅣🅢....🅣🅗🅔 🅕🅘🅛🅔 🅘🅢 🅝🅞🅣 🅐🅥🅐🅘🅛🅐🅑🅛🅔 ☺️",
+        text=f"CHECK SPELLING FROM GOOGLE AND REQUEST AGAIN.IF YOU DIDN'T GET EVEN AFTER THAT,THE FILE IS NOT AVAILABLE 😌",
         parse_mode="html",
         reply_to_message_id=update.message_id)
         return
