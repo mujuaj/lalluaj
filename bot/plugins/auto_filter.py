@@ -128,7 +128,7 @@ async def auto_filter(bot, update):
     else:
         await bot.send_message(
         chat_id=update.chat.id,
-        text=f"𝐒𝐎𝐑𝐑𝐘, 𝐈 𝐂𝐎𝐔𝐋𝐃𝐍𝐓 𝐅𝐈𝐍𝐃 𝐀𝐍𝐘 𝐑𝐄𝐒𝐔𝐋𝐓𝐒 𝐅𝐎𝐑 𝐘𝐎𝐔𝐑 𝐐𝐔𝐄𝐑𝐘 \n<code>{query}</code>\n
+        text=f"SORRY,I COULDNT FIND ANY RESULTS FOR YOUR QUERY \n<code>{query}</code>\n
 𝗣𝗟𝗘𝗔𝗦𝗘 𝗖𝗛𝗘𝗖𝗞 𝗧𝗛𝗘 𝗦𝗣𝗘𝗟𝗟𝗜𝗡𝗚 𝗙𝗥𝗢𝗠 <a>href="https://www.google.com/"> GOOGLE</a> \n👇𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗙𝗼𝗿𝗺𝗮𝘁 \n
 𝗘𝗴 : 𝗧𝗶𝘁𝗮𝗻𝗶𝗰  ✅\n
  𝗧𝗶𝘁𝗮𝗻𝗶𝗰 𝟭𝟵𝟵𝟳 ✅\n
