@@ -128,7 +128,7 @@ async def auto_filter(bot, update):
     else:
         await bot.send_message(
         chat_id=update.chat.id,
-        text=f"CHECK SPELLING FROM [GOOGLE](https://www.google.com/) AND REQUEST AGAIN.IF YOU DIDN'T GET EVEN AFTER THAT,THE FILE IS NOT AVAILABLE 😌",
+        text=f"⚠️𝗦𝗲𝗮𝗿𝗰𝗵 𝗚𝗼𝗼𝗴𝗹𝗲.𝗰𝗼𝗺 𝗙𝗶𝗻𝗱 𝘁𝗵𝗲 𝗖𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲 𝗮𝗻𝗱 𝗬𝗲𝗮𝗿. 𝗧𝘆𝗽𝗲 𝘁𝗵𝗮𝘁 𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 𝘁𝗼 𝗴𝗲𝘁 𝘁𝗵𝗲 𝗙𝗶𝗹𝗲𝘀⚠️𝗜𝗙 𝗬𝗢𝗨 𝗦𝗧𝗜𝗟𝗟 𝗗𝗜𝗗𝗡𝗧 𝗚𝗘𝗧 𝗥𝗘𝗦𝗨𝗟𝗧𝗦,𝗧𝗛𝗘 𝗙𝗜𝗟𝗘 𝗜𝗦 𝗡𝗢𝗧 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘 ☺️",
         parse_mode="html",
         reply_to_message_id=update.message_id)
         return
