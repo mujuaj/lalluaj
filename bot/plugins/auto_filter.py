@@ -102,7 +102,7 @@ async def auto_filter(bot, update):
                 else:
                     continue
             
-if len(results) >= max_results:
+            if len(results) >= max_results:
                 break
             
             if pm_file_chat: 
@@ -126,12 +126,7 @@ if len(results) >= max_results:
             )
         
     else:
-        await bot.send_message(
-        chat_id=update.chat.id,
-        text=f"CHECK SPELLING FROM GOOGLE AND REQUEST AGAIN.IF YOU DIDN'T GET EVEN AFTER THAT,THE FILE IS NOT AVAILABLE 😌",
-        parse_mode="html",
-        reply_to_message_id=update.message_id)
-        return
+        return # return if no files found for that query
     
 
     if len(results) == 0: # double check
@@ -157,7 +152,6 @@ if len(results) >= max_results:
             )
         
         # Just A Decaration
-        result[0].append([
         result[0].append([
             InlineKeyboardButton(f"📃Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
         ])
@@ -291,4 +285,3 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
             
             ACTIVE_CHATS[str(group_id)] = achatId
     return 
-
