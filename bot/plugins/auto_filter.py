@@ -102,7 +102,7 @@ async def auto_filter(bot, update):
                 else:
                     continue
             
-            if len(results) >= max_results:
+if len(results) >= max_results:
                 break
             
             if pm_file_chat: 
@@ -126,7 +126,6 @@ async def auto_filter(bot, update):
             )
         
     else:
-        else:
         await bot.send_message(
         chat_id=update.chat.id,
         text=f"CHECK SPELLING FROM GOOGLE AND REQUEST AGAIN.IF YOU DIDN'T GET EVEN AFTER THAT,THE FILE IS NOT AVAILABLE 😌",
@@ -158,6 +157,7 @@ async def auto_filter(bot, update):
             )
         
         # Just A Decaration
+        result[0].append([
         result[0].append([
             InlineKeyboardButton(f"📃Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
         ])
