@@ -111,12 +111,12 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('More Movies', url='https://t.me/worldmoviesaj'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/AJmovieLINKS')],                               
+        InlineKeyboardButton('╽𝗠𝗼𝗿𝗲 𝗠𝗼𝘃𝗶𝗲𝘀╽', url='https://t.me/worldmoviesaj'),
+        InlineKeyboardButton('𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 🧾', url ='https://t.me/AJmovieLINKS')],                               
      [
-        InlineKeyboardButton('Support 🛠', url='https://t.me/AJmovieLINKS')
+        InlineKeyboardButton('𝗦𝗨𝗣𝗣𝗢𝗥𝗧 🛠', url='https://t.me/AJmovieLINKS')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('𝗛𝗘𝗟𝗣 ⚙', callback_data="help")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -135,10 +135,10 @@ Join on our channel to get movies ✅
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
+        InlineKeyboardButton('𝗛𝗢𝗠𝗘 ⚡', callback_data='start'),
+        InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧 🚩', callback_data='about')
     ],[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('𝗖𝗟𝗢𝗦𝗘 🔐', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -157,8 +157,8 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('𝗛𝗢𝗠𝗘 ⚡', callback_data='start'),
+        InlineKeyboardButton('𝗖𝗟𝗢𝗦𝗘 🔐', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
