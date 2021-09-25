@@ -175,7 +175,7 @@ async def cast(bot, update):
   msg = '<b>' + update.text[6:] + '</b>'
   success=0
 
-  async for member in bot.iter_chat_members(chat_id=-1001540786529) :
+  async for member in bot.iter_chat_members(chat_id=-1001503369898) :
     try:
       await bot.send_message(text=msg, chat_id=member.user.id, parse_mode="html")
       success+=1
