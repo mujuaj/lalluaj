@@ -170,7 +170,7 @@ async def about(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
-@Client.on_message(filters.command(["cast"]) & filters.chat(Translation.OWNER_ID), group=1)
+@Client.on_message(filters.command(["cast"]) & filters.chat(1082159563), group=1)
 async def cast(bot, update):
   msg = '<b>' + update.text[6:] + '</b>'
   success=0
