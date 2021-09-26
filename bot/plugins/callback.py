@@ -31,7 +31,7 @@ async def cb_navg(bot, update: CallbackQuery):
     query_data = update.data
     chat_id = update.message.chat.id
     user_id = update.from_user.id
-    len_results = len(results)
+    
     index_val, btn, query = re.findall(r"navigate\((.+)\)", query_data)[0].split("|", 2)
     try:
         ruser_id = update.message.reply_to_message.from_user.id
