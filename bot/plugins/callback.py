@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-   text=f'''<a href="https://t.me/AJmovieLINKS"> 🇲‌🇴‌🇻‌🇮‌🇪‌ 🇭‌🇺‌🇧‌ 🇭‌🇩‌</a> \n\n𝙁𝙊𝙍 :  {update.from_user.mention}<b>\n\n🎬𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬:-</b><code>{query}</code>\n🌩️𝐓𝐨𝐭𝐚𝐥 𝐑𝐞𝐬𝐮𝐥𝐭𝐬:{len_results} \n\n𝐅𝐑𝐎𝐌:◻⬜<a href="https://t.me/AJmovieLINKS">♛𝗧𝗛𝗘 𝗦𝗘𝗥𝗩𝗘𝗥♕</a>⬛◼\n\n𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲\n\nപടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇'''
+    text=f'''<a href="https://t.me/AJmovieLINKS"> 🇲‌🇴‌🇻‌🇮‌🇪‌ 🇭‌🇺‌🇧‌ 🇭‌🇩‌</a> \n\n𝙁𝙊𝙍 :  {update.from_user.mention}<b>\n\n🎬𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬:-</b><code>{query}</code>\n🌩️𝐓𝐨𝐭𝐚𝐥 𝐑𝐞𝐬𝐮𝐥𝐭𝐬:{len_results} \n\n𝐅𝐑𝐎𝐌:◻⬜<a href="https://t.me/AJmovieLINKS">♛𝗧𝗛𝗘 𝗦𝗘𝗥𝗩𝗘𝗥♕</a>⬛◼\n\n𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲\n\nപടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇'''
         
     try:
         await update.message.edit(
