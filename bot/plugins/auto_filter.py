@@ -137,7 +137,7 @@ async def auto_filter(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id)
         asyncio.sleep(20)
-        text.delete()
+        send_message.delete()
         return
         
     
