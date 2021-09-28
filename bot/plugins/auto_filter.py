@@ -227,7 +227,7 @@ async def auto_filter(bot, update):
             print(e)
 
         asyncio.sleep(20)
-        msg.delete((
+        msg.delete()
 
 
 
