@@ -227,9 +227,9 @@ async def auto_filter(bot, update):
         except Exception as e:
             print(e)
 
-         if msg:
-           asyncio.sleep(20)
-           msg.delete()
+        if msg:
+            asyncio.sleep(20)
+            msg.delete()
 
 
 
