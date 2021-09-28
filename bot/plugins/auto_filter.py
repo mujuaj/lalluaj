@@ -21,6 +21,7 @@ async def auto_filter(bot, update):
     A Funtion To Handle Incoming Text And Reply With Appropriate Results
     """
     group_id = update.chat.id
+    msg=False
 
     if re.findall(r"((^\/|^,|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
         return
@@ -226,8 +227,9 @@ async def auto_filter(bot, update):
         except Exception as e:
             print(e)
 
-        asyncio.sleep(20)
-        msg.delete()
+         if msg:
+           asyncio.sleep(20)
+           msg.delete()
 
 
 
