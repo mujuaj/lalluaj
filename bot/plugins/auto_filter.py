@@ -144,7 +144,7 @@ else:
 await asyncio.sleep(0) await Send_message.delete()
         
 
-        return
+        
         
     
 
