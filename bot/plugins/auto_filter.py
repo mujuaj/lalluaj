@@ -143,9 +143,7 @@ else:
         reply_to_message_id=update.message_id)
 await asyncio.sleep(0) await Send_message.delete()
         
-
-        
-        
+        return
     
 
     if len(results) == 0: # double check
