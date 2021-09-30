@@ -136,7 +136,7 @@ async def auto_filter(bot, update):
          chat_id=update.chat.id,
          text=f"𝗦𝗲𝗮𝗿𝗰𝗵 ♝ google.com ♝ \n\n𝗙𝗶𝗻𝗱 𝘁𝗵𝗲 𝗖𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 \n🅈🄾🅄🅁 🅁🄴🅀🅄🄴🅂🅃 : <code>{query}</code> \n𝗮𝗻𝗱 𝗬𝗲𝗮𝗿 𝙊𝙛 𝙧𝙚𝙡𝙚𝙖𝙨𝙚. \n\n⚠️𝗧𝘆𝗽𝗲 𝘁𝗵𝗮𝘁 𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 𝘁𝗼 𝗴𝗲𝘁 𝘁𝗵𝗲 𝗙𝗶𝗹𝗲𝘀 (𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞  𝐬𝐚𝐦𝐞 𝐚𝐬 𝐢𝐧 𝐠𝐨𝐨𝐠𝐥𝐞)\n\n𝗧𝗜𝗣: 𝐂𝐎𝐏𝐘 𝐏𝐀𝐒𝐓𝐄 𝐓𝐇𝐄 𝐍𝐀𝐌𝐄 𝐅𝐑𝐎𝐌 𝐆𝐎𝐎𝐆𝐋𝐄🙃\n\n𝐈𝐅 𝐘𝐎𝐔 𝐒𝐓𝐈𝐋𝐋 𝐃𝐈𝐃𝐍𝐓 𝐆𝐄𝐓 𝐓𝐇𝐄 𝐑𝐄𝐒𝐔𝐋𝐓𝐒,𝗧𝗵𝗲 𝗳𝗶𝗹𝗲 𝗶𝘀 𝗡𝗼𝘁 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 ☺️", 
          reply_to_message_id=update.message_id,
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Google 🔎", url='https://google.com')]]) 
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 𝗦𝗘𝗔𝗥𝗖𝗛 𝗜𝗡 𝗚𝗢𝗢𝗚𝗟𝗘 🔎", url='https://google.com')]]) 
          )
          await asyncio.sleep(40) #in seconds
          await Send_message.delete()
