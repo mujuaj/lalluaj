@@ -4,7 +4,7 @@
 
 class Translation(object):
     
-    START_TEXT = """<b><u>Hey {} HOW ARE YOU!!</u></b>
+    START_TEXT = """<a href="https://telegra.ph/file/3f9cedc2012141e3a7f0a.jpg">⬞</a> <b><u>Hey {} HOW ARE YOU!!</u></b>
 <i>Am Just An Advance AJ Auto Filter Bot....😉
 
 I am exclusively made for Movie Hub Hd.
