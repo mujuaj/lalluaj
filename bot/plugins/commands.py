@@ -18,7 +18,7 @@ async def start(bot, update):
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked":
-               await update.reply_text("🤭 Sorry Dude, You are B A N N E D 🤣🤣🤣")
+               await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
                return
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
@@ -39,7 +39,7 @@ Join on our channel to get movies ✅
         file_uid = False
     
     if file_uid:
-        file_id, file_name, file_caption, file_type = await db.get_file((file_uid)
+        file_id, file_name, file_caption, file_type = await db.get_file(file_uid)
         
         if (file_id or file_type) == None:
             return
