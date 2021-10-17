@@ -12,12 +12,7 @@ from bot import FORCESUB_CHANNEL
 db = Database()
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-
-    try:
-        file_uid = update.command[1]
-    except IndexError:
-        file_uid = False
-    #adding force subscribe option to bot
+#adding force subscribe option to bot
     update_channel = FORCESUB_CHANNEL
     if update_channel:
         try:
@@ -34,11 +29,14 @@ Join on our channel to get movies ✅
 ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്യതാൽ താങ്കൾക്ക് movies കിട്ടുന്നത് ആണ് ✅\n𝘼𝙛𝙩𝙚𝙧 𝙟𝙤𝙞𝙣𝙞𝙣𝙜 𝙘𝙡𝙞𝙘𝙠 𝙤𝙣 𝙩𝙝𝙚 𝙛𝙞𝙡𝙚 𝙗𝙪𝙩𝙩𝙤𝙣 𝙞𝙣 𝙜𝙧𝙤𝙪𝙥 𝙖𝙣𝙙 𝙮𝙤𝙪 𝙬𝙞𝙡𝙡 𝙜𝙚𝙩 𝙛𝙞𝙡𝙚.
 ⬇️Channel link⬇️ </b>""",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="⚡️ 𝐉𝐎𝐈𝐍 𝐅𝐎𝐑 𝐅𝐈𝐋𝐄 ⚡️", url=f"https://t.me/{update_channel}")],
-                 [InlineKeyBoardButton("Retry", url=f"https://t.me/@Pyarijathanbot?start={file_uid}")]
+                    [ InlineKeyboardButton(text="⚡ 𝐉𝐎𝐈𝐍 𝐅𝐎𝐑 𝐅𝐈𝐋𝐄 ⚡️", url=f"https://t.me/{update_channel}")]
               ])
             )
             return
+    try:
+        file_uid = update.command[1]
+    except IndexError:
+        file_uid = False
     
     if file_uid:
         file_id, file_name, file_caption, file_type = await db.get_file((file_uid)
