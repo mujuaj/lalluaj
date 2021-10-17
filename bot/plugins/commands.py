@@ -127,7 +127,7 @@ Join on our channel to get movies ✅
                 update.from_user.first_name),
         reply_markup=reply_markup,
         parse_mode="html",
-        disable_web_page_preview=True,
+        disable_web_page_preview=False,
         reply_to_message_id=update.message_id
     )
 
