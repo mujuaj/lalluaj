@@ -21,7 +21,11 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
+@Client.on_callback_query(filters.regex(r"instruct"), group=2)
 
+async def cb_instruct(bot, update: CallbackQuery):
+    await update.answer("Inna Mwone",show_alert=True)
+    
 @Client.on_callback_query(filters.regex(r"navigate\((.+)\)"), group=2)
 async def cb_navg(bot, update: CallbackQuery):
     """
