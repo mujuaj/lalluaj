@@ -138,7 +138,7 @@ async def auto_filter(bot, update):
          reply_to_message_id=update.message_id,
          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 𝗦𝗘𝗔𝗥𝗖𝗛 𝗜𝗡 𝗚𝗢𝗢𝗚𝗟𝗘 🔎", url='https://google.com')],[InlineKeyboardButton("𝗜𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻𝘀",callback_data="instruct")]]) 
          )
-         await asyncio.sleep(40) #in seconds
+         await asyncio.sleep(20) #in seconds
          await Send_message.delete()
 
     if len(results) == 0: # double check
