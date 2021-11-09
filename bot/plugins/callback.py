@@ -24,7 +24,7 @@ db = Database()
 @Client.on_callback_query(filters.regex(r"instruct"), group=2)
 
 async def cb_instruct(bot, update: CallbackQuery):
-    await update.answer("🤟 𝐍𝐎 𝐔𝐒𝐄 𝐅𝐑𝐎𝐌 𝐑𝐄𝐐𝐔𝐄𝐒𝐓𝐈𝐍𝐆 𝐓𝐇𝐄 𝐌𝐎𝐕𝐈𝐄𝐒 𝐖𝐇𝐈𝐂𝐇 𝐀𝐑𝐄 𝐍𝐎𝐓 𝐑𝐄𝐋𝐄𝐀𝐒𝐄𝐃\n\n〽️𝐉𝐮𝐬𝐭 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐌𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 & 𝐲𝐞𝐚𝐫 𝐃𝐨𝐧𝐭 𝐮𝐬𝐞 𝐰𝐨𝐫𝐝𝐬 𝐥𝐢𝐤𝐞 (𝐔𝐧𝐝𝐨, 𝐊𝐢𝐭𝐭𝐮𝐨, 𝐌𝐚𝐥𝐚𝐲𝐚𝐥𝐚𝐦 𝐦𝐨𝐯𝐢𝐞 𝐄𝐭𝐜)",show_alert=True)
+    await update.answer("🤟 𝐍𝐎 𝐔𝐒𝐄 𝐅𝐑𝐎𝐌 𝐑𝐄𝐐𝐔𝐄𝐒𝐓𝐈𝐍𝐆 𝐓𝐇𝐄 𝐌𝐎𝐕𝐈𝐄𝐒 𝐖𝐇𝐈𝐂𝐇 𝐀𝐑𝐄 𝐍𝐎𝐓 𝐑𝐄𝐋𝐄𝐀𝐒𝐄𝐃\n\n〽️ 𝐉𝐮𝐬𝐭 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐌𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 & 𝐲𝐞𝐚𝐫 𝐃𝐨𝐧𝐭 𝐮𝐬𝐞 𝐰𝐨𝐫𝐝𝐬 𝐥𝐢𝐤𝐞 (𝐔𝐧𝐝𝐨,𝐊𝐢𝐭𝐭𝐮𝐨,𝐌𝐚𝐥𝐚𝐲𝐚𝐥𝐚𝐦 𝐦𝐨𝐯𝐢𝐞 𝐄𝐭𝐜)",show_alert=True)
     
 @Client.on_callback_query(filters.regex(r"navigate\((.+)\)"), group=2)
 async def cb_navg(bot, update: CallbackQuery):
